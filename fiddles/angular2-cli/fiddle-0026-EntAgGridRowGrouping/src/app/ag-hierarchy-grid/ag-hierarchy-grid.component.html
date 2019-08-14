@@ -1,0 +1,39 @@
+<input class="ag-hierarchy-grid-filter" (keyup)="onQuickFilterChanged($event)" type="text" id="quickFilterInput" placeholder="Type text to filter..."/>
+<div class="ag-hierarchy-grid" [ngStyle]="_style" (window:resize)="onResize($event)">
+
+
+  <ag-grid-angular
+    style="width: 100%; height: 100%;"
+    id="agHierarchyGrid1"
+    class="ag-theme-balham"
+    [pivotMode]="false"
+    [autoGroupColumnDef]="this._autoGroupColumnDef"
+    [columnDefs]="this._columnDefs"
+    [components]="this._components"
+    [defaultColDef]="this._defaultColDef"
+    [enableSorting]="true"
+    [enableColResize]="true"
+    [getDataPath]="this._getDataPath"
+    [groupDefaultExpanded]="this._groupDefaultExpanded"
+    [icons]="this._icons"
+    [pinnedTopRowData]="this._pinnedTopRowData"
+    [rowData]="this._rowData"
+    [showToolPanel]="true"
+    [sideBar]="this._sideBar"
+    [suppressCellSelection]="false"
+    [treeData]="true"
+    (cellClicked)="onCellClicked($event)"
+    (columnEverythingChanged)="onColumnEverythingChanged($event)"
+    (columnMoved)="onColumnMoved($event)"
+    (columnPinned)="onColumnPinned($event)"
+    (columnVisible)="onColumnVisible($event)"
+    (filterChanged)="onFilterChanged($event)"
+    (gridReady)="onGridReady($event)"
+    (rowClicked)="onRowClicked($event)"
+    (rowDoubleClicked)="onRowDoubleClicked($event)"
+    (rowSelected)="onRowSelected($event)"
+    (rowGroupOpened)="onRowGroupOpened($event)"
+    (selectionChanged)="onSelectionChanged($event)"
+    (sortChanged)="onSortChanged($event)"
+  ></ag-grid-angular>
+</div>

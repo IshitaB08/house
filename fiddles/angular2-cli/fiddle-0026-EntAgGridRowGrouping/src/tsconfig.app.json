@@ -1,8 +1,31 @@
 {
-  "extends": "../tsconfig.json",
   "compilerOptions": {
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": false,
+    "noUnusedLocals": false,
+    "lib": [
+      "es2016",
+      "dom"
+    ],
     "outDir": "../out-tsc/app",
-    "types": []
+    "target": "es5",
+    "module": "es2015",
+    "baseUrl": "",
+    "types": [],
+    "paths": {
+      "@angular/*": [
+        "../node_modules/@angular/*"
+      ],
+      "ag-grid-community": [
+        "../node_modules/ag-grid-community"
+      ],
+      "ag-grid-community/*": [
+        "../node_modules/ag-grid-community/*"
+      ]
+    }
   },
   "exclude": [
     "test.ts",

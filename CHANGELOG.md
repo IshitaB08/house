@@ -2164,4 +2164,5 @@ Alternately, the _Daily Diary of my Programming Dreams_.
 * Added [fiddles/angular2-cli/fiddle-0023-EntAgGridRowSelection](fiddles/angular2-cli/fiddle-0023-EntAgGridRowSelection)
 * Added [fiddles/angular2-cli/fiddle-0024-EntAgGridRowTransactions](fiddles/angular2-cli/fiddle-0024-EntAgGridRowTransactions)
 * Added [fiddles/angular2-cli/fiddle-0025-EntAgGridTreeExpandEvent](fiddles/angular2-cli/fiddle-0025-EntAgGridTreeExpandEvent)
+* Added [fiddles/jquery/fiddle-0075-EntAgGridRowGrouping](fiddles/jquery/fiddle-0075-EntAgGridRowGrouping)
 * Added [fiddles/angular2-cli/fiddle-0026-EntAgGridRowGrouping](fiddles/angular2-cli/fiddle-0026-EntAgGridRowGrouping)
