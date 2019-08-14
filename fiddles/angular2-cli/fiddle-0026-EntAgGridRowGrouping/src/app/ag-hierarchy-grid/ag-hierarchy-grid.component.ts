@@ -72,15 +72,15 @@ export class AgHierarchyGridComponent implements OnChanges, DoCheck {
     this.events = new EventEmitter();
     this._rowSelection = 'multiple';
     this._defaultColDef = {
-      sortable: true,
+      sortable: false,
       resizable: true,
-      suppressMenu: true,
+      suppressMenu: false,
       filter: 'agTextColumnFilter'
     };
     this._components = {};
     this._autoGroupColumnDef = {
       cellRenderer: 'agGroupCellRenderer',
-      cellRendererParams: { checkbox: true,
+      cellRendererParams: { checkbox: false,
         suppressCount: true
        }
     };
@@ -98,14 +98,15 @@ export class AgHierarchyGridComponent implements OnChanges, DoCheck {
             suppressPivots: true,
             suppressPivotMode: true,
             suppressSideButtons: true,
-            suppressColumnFilter: true,
-            suppressColumnSelectAll: true,
+            suppressColumnFilter: false,
+            suppressColumnSelectAll: false,
             suppressColumnExpandAll: true
           }
         }
       ],
       defaultToolPanel: "columns"
     };
+    this._sideBar = true;
     this._getDataPath = (params: any) => this.onGetDataPath(params);
     this._groupDefaultExpanded= -1;
     

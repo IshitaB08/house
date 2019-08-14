@@ -4,7 +4,7 @@
     "declaration": false,
     "moduleResolution": "node",
     "emitDecoratorMetadata": true,
-    "experimentalDecorators": false,
+    "experimentalDecorators": true,
     "noUnusedLocals": false,
     "lib": [
       "es2016",
